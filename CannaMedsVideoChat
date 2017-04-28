@@ -126,17 +126,17 @@ onBistriConferenceReady = function () {
        }
    } );
  
-   // bind function "joinConference" to button "Join Conference Room"
+   // bind function "joinConference" to button "Join CannaMeds Live Session"
    q( "#join" ).addEventListener( "click", joinConference );
    
-   // bind function "quitConference" to button "Quit Conference Room"
+   // bind function "quitConference" to button "Leave CannaMeds Live Session"
    q( "#quit" ).addEventListener( "click", quitConference );
    
    // open a new session on the server
    bc.connect();
 }
  
-// when button "Join Conference Room" has been clicked
+// when button "Join CannaMeds Live Session" has been clicked
 function joinConference(){
    var roomToJoin = "vineet";
    // if "Conference Name" field is not empty ...
@@ -150,7 +150,7 @@ function joinConference(){
    }  
 }
  
-// when button "Quit Conference Room" has been clicked
+// when button "Leave CannaMeds Live Session" has been clicked
 function quitConference(){
    // quit the current conference room
    bc.quitRoom( room );
@@ -215,13 +215,13 @@ function q( query ){
  
                 <button id="profile" type="button" style=" float:right; display:block;" class="btn btn-lg btn-success">Profile</button>
  
-                <button type="button" style=" float:right; margin-right:10px " class="btn btn-lg btn-success">Courses</button>
+                <button type="button" style=" float:right; margin-right:10px "Help="btn btn-lg btn-success">Journal</button>
             </div>
      </div>
     <div class="pane" id="pane_1" style="display: block">
  
         <br>
-        <input type="button" value="Join Yoga lecture" id="join" class="btn btn-lg btn-success">
+        <input type="button" value="Join CannaMeds Live Session" id="join" class="btn btn-lg btn-success">
     </div>
    
     <div class=" pane" id="pane_2" style="display: none">
